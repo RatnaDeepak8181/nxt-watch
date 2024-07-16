@@ -1,0 +1,57 @@
+import {Link} from 'react-router-dom'
+import styled from 'styled-components'
+
+export const NavLink = styled(Link)`
+  text-decoration: none;
+`
+export const VideoCardLi = styled.li`
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 285px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 295px;
+    height: 285px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 345px;
+    height: 285px;
+  }
+`
+export const Thumbnail = styled.img`
+  height: 170px;
+  width: 100%;
+`
+export const VideoDetailsContainer = styled.div`
+  display: flex;
+  margin: 20px 15px 30px 15px;
+`
+export const ChannelLogo = styled.img`
+  height: 25px;
+  margin-right: 15px;
+`
+export const ChannelDetailsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+export const Title = styled.p`
+  color: ${props => (props.bgColor ? '#f9f9f9' : '#1e293b')};
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 5px;
+`
+export const NameViewsAndDateContainer = styled.ul`
+  display: flex;
+  align-items: center;
+  padding: 0px;
+`
+export const NameItem = styled.li``
+export const Name = styled.p`
+  color: ${props => (props.bgColor ? '#94a3b8' : '#212121')};
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 300;
+  margin-right: 20px;
+`
